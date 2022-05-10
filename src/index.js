@@ -2,15 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {BrowserRouter} from 'react-router-dom'
 
-import './index.css';
 import App from './App';
+import GlobalStyles from './component/GlobalStyle';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <GlobalStyles>
+        <App />
+      </GlobalStyles>
     </BrowserRouter>
   </React.StrictMode>
 );
